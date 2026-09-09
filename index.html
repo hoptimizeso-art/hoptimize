@@ -1,7 +1,9 @@
 ```html
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -9,9 +11,9 @@
 
 <style>
 
-/* =========================================================
+/* =====================================================
    CONFIGURACIÓN GENERAL
-========================================================= */
+===================================================== */
 
 :root{
     --bg:#020305;
@@ -54,10 +56,10 @@ section{
 }
 
 
-/* =========================================================
-   FONDO TECNOLÓGICO 100% CSS
-   NO UTILIZA PNG, JPG, WEBP NI SVG
-========================================================= */
+/* =====================================================
+   FONDO TECNOLÓGICO
+   100% CSS
+===================================================== */
 
 .tech-bg{
     background:
@@ -139,9 +141,9 @@ section{
 }
 
 
-/* =========================================================
+/* =====================================================
    CABECERA
-========================================================= */
+===================================================== */
 
 .nav{
     position:absolute;
@@ -167,27 +169,32 @@ section{
         );
 }
 
-/* Logo creado directamente con HTML/CSS */
+
+/* LOGO ORIGINAL */
 
 .brand{
     display:flex;
     align-items:center;
+
     width:210px;
     height:62px;
+
     flex:none;
 }
 
 .brand-logo{
-    font-size:25px;
-    font-weight:900;
-    letter-spacing:2px;
-    color:#fff;
+    display:block;
+
+    width:190px;
+    height:auto;
+
+    max-height:62px;
+
+    object-fit:contain;
 }
 
-.brand-logo span{
-    font-weight:300;
-    opacity:.75;
-}
+
+/* MENÚ */
 
 .navlinks{
     display:flex;
@@ -208,41 +215,53 @@ section{
 
 .navlinks a.active::after{
     content:"";
+
     position:absolute;
+
     left:0;
     right:0;
     bottom:0;
+
     height:2px;
+
     background:#fff;
 }
 
 
-/* =========================================================
+/* =====================================================
    PORTADA
-========================================================= */
+===================================================== */
 
 .hero{
     display:flex;
     align-items:center;
+
     padding:120px 7% 70px;
 }
 
 .hero-copy{
     width:48%;
+
     position:relative;
+
     z-index:5;
 }
 
 .eyebrow{
     font-size:13px;
+
     letter-spacing:5px;
+
     color:#aab4bf;
+
     margin-bottom:25px;
 }
 
 .hero h1{
     font-size:clamp(48px,7vw,92px);
+
     line-height:.95;
+
     letter-spacing:-3px;
 }
 
@@ -252,23 +271,31 @@ section{
 
 .hero p{
     font-size:23px;
+
     color:#bfc6ce;
+
     margin:25px 0 34px;
+
     max-width:560px;
+
     line-height:1.5;
 }
 
 .btn-outline{
     display:inline-flex;
+
     align-items:center;
+
     gap:25px;
 
     padding:17px 28px;
 
     border:1px solid #bfc8d1;
+
     border-radius:5px;
 
     font-weight:700;
+
     letter-spacing:.5px;
 
     transition:.25s;
@@ -276,7 +303,9 @@ section{
 
 .btn-outline:hover{
     background:#fff;
+
     color:#000;
+
     transform:translateY(-3px);
 }
 
@@ -286,7 +315,9 @@ section{
 
 .hero-chip{
     margin-top:45px;
+
     width:280px;
+
     height:1px;
 
     background:
@@ -301,7 +332,9 @@ section{
 
 .hero-chip::after{
     content:"";
+
     position:absolute;
+
     right:0;
     top:-3px;
 
@@ -309,18 +342,20 @@ section{
     height:7px;
 
     border-radius:50%;
+
     background:#fff;
 
     box-shadow:0 0 15px #fff;
 }
 
 
-/* =========================================================
-   CPU 3D CSS
-========================================================= */
+/* =====================================================
+   CPU 3D
+===================================================== */
 
 .cpu-scene{
     position:absolute;
+
     right:4%;
     top:15%;
 
@@ -332,6 +367,7 @@ section{
 
 .board{
     position:absolute;
+
     inset:8% 0 5%;
 
     transform:
@@ -380,6 +416,7 @@ section{
         );
 
     border:4px solid #a9bac8;
+
     border-radius:25px;
 
     box-shadow:
@@ -392,9 +429,11 @@ section{
     content:"";
 
     position:absolute;
+
     inset:25px;
 
     border:1px solid #4b5b69;
+
     border-radius:12px;
 }
 
@@ -402,9 +441,11 @@ section{
     content:"";
 
     position:absolute;
+
     inset:65px;
 
     border:1px solid #35424e;
+
     border-radius:8px;
 
     background:
@@ -427,6 +468,7 @@ section{
         );
 
     height:2px;
+
     opacity:.65;
 }
 
@@ -434,6 +476,7 @@ section{
     width:310px;
     left:2%;
     top:51%;
+
     transform:rotate(15deg);
 }
 
@@ -441,6 +484,7 @@ section{
     width:300px;
     right:1%;
     top:35%;
+
     transform:rotate(-18deg);
 }
 
@@ -448,6 +492,7 @@ section{
     width:260px;
     right:8%;
     top:69%;
+
     transform:rotate(20deg);
 }
 
@@ -455,6 +500,7 @@ section{
     width:190px;
     left:20%;
     top:76%;
+
     transform:rotate(-13deg);
 }
 
@@ -465,20 +511,22 @@ section{
     height:8px;
 
     border:1px solid #fff;
+
     border-radius:50%;
 
     box-shadow:0 0 12px #fff;
 }
 
 
-/* =========================================================
-   SECCIÓN INICIO
-========================================================= */
+/* =====================================================
+   INICIO
+===================================================== */
 
 .about{
     padding:135px 7% 80px;
 
     display:grid;
+
     grid-template-columns:42% 58%;
 
     align-items:center;
@@ -486,12 +534,15 @@ section{
 
 .about-copy{
     padding-right:60px;
+
     z-index:5;
 }
 
 .logo-large{
     font-size:clamp(45px,6vw,78px);
+
     font-weight:800;
+
     letter-spacing:-2px;
 }
 
@@ -506,14 +557,16 @@ section{
 
 .about-copy p{
     font-size:22px;
+
     line-height:1.55;
+
     color:#c7ccd2;
 }
 
 
-/* =========================================================
+/* =====================================================
    MONITOR
-========================================================= */
+===================================================== */
 
 .monitor-area{
     height:560px;
@@ -521,17 +574,21 @@ section{
     position:relative;
 
     display:flex;
+
     align-items:center;
+
     justify-content:center;
 }
 
 .monitor{
     width:min(700px,90%);
+
     height:390px;
 
     background:#050607;
 
     border:1px solid #5c6975;
+
     border-radius:15px;
 
     transform:
@@ -557,6 +614,7 @@ section{
     padding:30px;
 
     display:grid;
+
     grid-template-columns:45% 55%;
 
     gap:20px;
@@ -582,6 +640,7 @@ section{
 
 .graph-title{
     font-weight:700;
+
     margin-bottom:18px;
 }
 
@@ -701,6 +760,7 @@ section{
     bottom:25px;
 
     width:180px;
+
     height:75px;
 
     background:
@@ -724,6 +784,7 @@ section{
     bottom:0;
 
     width:360px;
+
     height:25px;
 
     background:#090b0d;
@@ -735,9 +796,9 @@ section{
 }
 
 
-/* =========================================================
+/* =====================================================
    VIDEO
-========================================================= */
+===================================================== */
 
 .video-section{
     min-height:auto;
@@ -830,9 +891,9 @@ section{
 }
 
 
-/* =========================================================
+/* =====================================================
    CARACTERÍSTICAS
-========================================================= */
+===================================================== */
 
 .features{
     padding:125px 5% 60px;
@@ -926,7 +987,9 @@ section{
     padding:70px;
 
     display:flex;
+
     flex-direction:column;
+
     justify-content:center;
 
     background:#030405;
@@ -934,6 +997,7 @@ section{
 
 .feature-intro h2{
     font-size:50px;
+
     line-height:1.08;
 }
 
@@ -1011,9 +1075,9 @@ section{
 }
 
 
-/* =========================================================
+/* =====================================================
    DESCARGA
-========================================================= */
+===================================================== */
 
 .download-section{
     padding:140px 7% 70px;
@@ -1098,9 +1162,9 @@ section{
 }
 
 
-/* =========================================================
+/* =====================================================
    LAPTOP
-========================================================= */
+===================================================== */
 
 .laptop{
     position:absolute;
@@ -1151,31 +1215,32 @@ section{
     display:flex;
 
     align-items:center;
+
     justify-content:center;
 }
 
-.screen-logo{
-    text-align:center;
 
-    font-size:38px;
+/* LOGO ORIGINAL EN LA NOTEBOOK */
 
-    font-weight:900;
+.screen-logo-img{
+    width:220px;
 
-    letter-spacing:2px;
-}
+    max-width:70%;
 
-.screen-logo span{
-    font-weight:300;
-    opacity:.7;
+    height:auto;
+
+    display:block;
 }
 
 .keyboard{
     position:absolute;
 
     right:-2%;
+
     bottom:13%;
 
     width:88%;
+
     height:28%;
 
     background:
@@ -1224,9 +1289,9 @@ section{
 }
 
 
-/* =========================================================
+/* =====================================================
    CONTACTO
-========================================================= */
+===================================================== */
 
 .contact{
     margin-top:60px;
@@ -1249,6 +1314,11 @@ section{
 .email:hover{
     opacity:.7;
 }
+
+
+/* =====================================================
+   REDES
+===================================================== */
 
 .socials{
     display:flex;
@@ -1274,6 +1344,7 @@ section{
     display:flex;
 
     align-items:center;
+
     justify-content:center;
 
     font-weight:bold;
@@ -1293,9 +1364,9 @@ section{
 }
 
 
-/* =========================================================
+/* =====================================================
    MODAL
-========================================================= */
+===================================================== */
 
 .modal{
     position:fixed;
@@ -1310,6 +1381,7 @@ section{
     display:none;
 
     align-items:center;
+
     justify-content:center;
 
     z-index:100;
@@ -1365,9 +1437,9 @@ section{
 }
 
 
-/* =========================================================
-   ANIMACIONES GENERALES
-========================================================= */
+/* =====================================================
+   ANIMACIONES
+===================================================== */
 
 .fade-up{
     opacity:0;
@@ -1388,9 +1460,9 @@ section{
 }
 
 
-/* =========================================================
+/* =====================================================
    RESPONSIVE
-========================================================= */
+===================================================== */
 
 @media(max-width:900px){
 
@@ -1406,6 +1478,10 @@ section{
         width:150px;
     }
 
+    .brand-logo{
+        width:140px;
+    }
+
     .hero{
         padding-left:6%;
     }
@@ -1416,6 +1492,7 @@ section{
 
     .cpu-scene{
         opacity:.45;
+
         width:70%;
     }
 
@@ -1446,6 +1523,7 @@ section{
 
     .laptop{
         opacity:.35;
+
         width:70%;
     }
 }
@@ -1462,11 +1540,11 @@ section{
     }
 
     .brand{
-        width:120px;
+        width:100px;
     }
 
     .brand-logo{
-        font-size:17px;
+        width:95px;
     }
 
     .navlinks{
@@ -1474,7 +1552,7 @@ section{
     }
 
     .navlinks a{
-        font-size:11px;
+        font-size:10px;
     }
 
     .navlinks a:nth-child(3),
@@ -1563,6 +1641,7 @@ section{
 }
 
 </style>
+
 </head>
 
 
@@ -1573,19 +1652,34 @@ section{
      PORTADA
 ===================================================== -->
 
-<section class="hero tech-bg" id="portada">
+<section
+    class="hero tech-bg"
+    id="portada"
+>
+
 
     <div class="nav">
 
-        <a class="brand" href="#portada">
-            <div class="brand-logo">
-                HOPTIMIZE <span>SO</span>
-            </div>
+        <a
+            class="brand"
+            href="#portada"
+        >
+
+            <img
+                src="logo-optimize.png"
+                alt="HOPTIMIZE SO"
+                class="brand-logo"
+            >
+
         </a>
+
 
         <div class="navlinks">
 
-            <a class="active" href="#portada">
+            <a
+                class="active"
+                href="#portada"
+            >
                 Inicio
             </a>
 
@@ -1616,9 +1710,11 @@ section{
             NUEVA GENERACIÓN · RENDIMIENTO
         </div>
 
+
         <h1>
             HOPTIMIZE <span>SO</span>
         </h1>
+
 
         <p>
             Un sistema operativo diseñado para devolver
@@ -1626,7 +1722,11 @@ section{
             y de bajos recursos.
         </p>
 
-        <a class="btn-outline" href="#inicio">
+
+        <a
+            class="btn-outline"
+            href="#inicio"
+        >
 
             CONOCER MÁS
 
@@ -1635,6 +1735,7 @@ section{
             </span>
 
         </a>
+
 
         <div class="hero-chip"></div>
 
@@ -1676,18 +1777,30 @@ section{
 
 
 <!-- =====================================================
-     INICIO / SOBRE HOPTIMIZE
+     INICIO
 ===================================================== -->
 
-<section class="about tech-bg" id="inicio">
+<section
+    class="about tech-bg"
+    id="inicio"
+>
+
 
     <div class="nav">
 
-        <a class="brand" href="#portada">
-            <div class="brand-logo">
-                HOPTIMIZE <span>SO</span>
-            </div>
+        <a
+            class="brand"
+            href="#portada"
+        >
+
+            <img
+                src="logo-optimize.png"
+                alt="HOPTIMIZE SO"
+                class="brand-logo"
+            >
+
         </a>
+
 
         <div class="navlinks">
 
@@ -1695,7 +1808,10 @@ section{
                 Inicio
             </a>
 
-            <a class="active" href="#inicio">
+            <a
+                class="active"
+                href="#inicio"
+            >
                 Nosotros
             </a>
 
@@ -1722,7 +1838,9 @@ section{
             HOPTIMIZE SO
         </div>
 
+
         <div class="rule"></div>
+
 
         <p>
             HOPTIMIZE SO es un sistema operativo basado en Linux,
@@ -1730,10 +1848,13 @@ section{
             antiguas o con recursos limitados.
         </p>
 
+
         <p style="margin-top:20px;">
+
             Nuestro objetivo es ofrecer una experiencia rápida,
             estable, sencilla y eficiente, permitiendo aprovechar
             equipos que todavía tienen mucho para ofrecer.
+
         </p>
 
     </div>
@@ -1832,13 +1953,19 @@ section{
 
 
 <!-- =====================================================
-     VIDEO DE HOPTIMIZE
+     VIDEO
 ===================================================== -->
 
-<section class="video-section" id="video">
+<section
+    class="video-section"
+    id="video"
+>
+
 
     <div class="video-title fade-up">
+
         Conocé HOPTIMIZE
+
     </div>
 
 
@@ -1869,15 +1996,27 @@ section{
      CARACTERÍSTICAS
 ===================================================== -->
 
-<section class="features" id="caracteristicas">
+<section
+    class="features"
+    id="caracteristicas"
+>
 
-    <div class="nav" style="position:absolute;">
 
-        <a class="brand" href="#portada">
+    <div
+        class="nav"
+        style="position:absolute;"
+    >
 
-            <div class="brand-logo">
-                HOPTIMIZE <span>SO</span>
-            </div>
+        <a
+            class="brand"
+            href="#portada"
+        >
+
+            <img
+                src="logo-optimize.png"
+                alt="HOPTIMIZE SO"
+                class="brand-logo"
+            >
 
         </a>
 
@@ -1896,7 +2035,10 @@ section{
                 Video
             </a>
 
-            <a class="active" href="#caracteristicas">
+            <a
+                class="active"
+                href="#caracteristicas"
+            >
                 Características
             </a>
 
@@ -1917,15 +2059,20 @@ section{
         <div class="feature-intro">
 
             <h2>
+
                 Ligero.<br>
                 Estable.<br>
                 Eficiente.
+
             </h2>
 
+
             <p>
+
                 Diseñado para aprovechar al máximo los recursos
                 disponibles de cada computadora, ofreciendo una
                 experiencia sencilla, rápida y adaptable.
+
             </p>
 
         </div>
@@ -1934,12 +2081,16 @@ section{
 
 
     <div class="features-title">
+
         CARACTERÍSTICAS PRINCIPALES
+
     </div>
 
 
     <div class="feature-grid">
 
+
+        <!-- VELOCIDAD -->
 
         <div
             class="feature-card"
@@ -1967,6 +2118,7 @@ section{
         </div>
 
 
+        <!-- CONSUMO -->
 
         <div
             class="feature-card"
@@ -1994,6 +2146,7 @@ section{
         </div>
 
 
+        <!-- SOPORTE -->
 
         <div
             class="feature-card"
@@ -2021,6 +2174,7 @@ section{
         </div>
 
 
+        <!-- SEGURIDAD -->
 
         <div
             class="feature-card"
@@ -2066,11 +2220,16 @@ section{
 
     <div class="nav">
 
-        <a class="brand" href="#portada">
+        <a
+            class="brand"
+            href="#portada"
+        >
 
-            <div class="brand-logo">
-                HOPTIMIZE <span>SO</span>
-            </div>
+            <img
+                src="logo-optimize.png"
+                alt="HOPTIMIZE SO"
+                class="brand-logo"
+            >
 
         </a>
 
@@ -2093,7 +2252,10 @@ section{
                 Características
             </a>
 
-            <a class="active" href="#descarga">
+            <a
+                class="active"
+                href="#descarga"
+            >
                 Descarga
             </a>
 
@@ -2105,8 +2267,10 @@ section{
     <div class="download-copy">
 
         <h2>
+
             Descarga<br>
             HOPTIMIZE
+
         </h2>
 
 
@@ -2114,10 +2278,14 @@ section{
 
 
         <p>
+
             Prepará tu computadora para una nueva experiencia
             de rendimiento.
+
             <br><br>
+
             Próximamente podrás descargar HOPTIMIZE SO.
+
         </p>
 
 
@@ -2134,13 +2302,18 @@ section{
 
 
         <div class="compatible">
+
             Compatible con arquitecturas x64
+
         </div>
 
 
         <!-- CONTACTO -->
 
-        <div class="contact" id="contacto">
+        <div
+            class="contact"
+            id="contacto"
+        >
 
             <h3>
                 Contacto
@@ -2148,9 +2321,13 @@ section{
 
 
             <p>
+
                 ¿Tenés dudas, sugerencias o querés colaborar?
+
                 <br>
+
                 Escribinos, estaremos encantados de leerte.
+
             </p>
 
 
@@ -2190,7 +2367,6 @@ section{
     </div>
 
 
-
     <!-- LAPTOP -->
 
     <div class="laptop">
@@ -2199,12 +2375,11 @@ section{
 
             <div class="lid-screen">
 
-                <div class="screen-logo">
-
-                    HOPTIMIZE
-                    <span>SO</span>
-
-                </div>
+                <img
+                    src="logo-optimize.png"
+                    alt="HOPTIMIZE SO"
+                    class="screen-logo-img"
+                >
 
             </div>
 
@@ -2214,7 +2389,6 @@ section{
         <div class="keyboard"></div>
 
     </div>
-
 
 
     <!-- REDES -->
@@ -2274,7 +2448,7 @@ section{
 
 
 <!-- =====================================================
-     MODAL DE INFORMACIÓN
+     MODAL
 ===================================================== -->
 
 <div
@@ -2288,7 +2462,9 @@ section{
             class="close"
             onclick="closeInfo()"
         >
+
             Cerrar ✕
+
         </button>
 
 
@@ -2323,6 +2499,7 @@ function showInfo(t,p){
         .getElementById("modal")
         .classList
         .add("show");
+
 }
 
 
@@ -2332,6 +2509,7 @@ function closeInfo(){
         .getElementById("modal")
         .classList
         .remove("show");
+
 }
 
 
@@ -2353,7 +2531,7 @@ document
 
 
 /* =====================================================
-   BOTÓN DESCARGA
+   DESCARGA
 ===================================================== */
 
 function downloadISO(){
@@ -2373,8 +2551,8 @@ function downloadISO(){
 function social(x){
 
     alert(
-        "Cuando tengan la cuenta oficial de " +
-        x +
+        "Cuando tengan la cuenta oficial de "
+        + x +
         ", se puede colocar aquí el enlace."
     );
 
@@ -2383,7 +2561,7 @@ function social(x){
 
 
 /* =====================================================
-   ANIMACIÓN AL APARECER
+   ANIMACIONES
 ===================================================== */
 
 const animatedElements =
@@ -2429,8 +2607,9 @@ animatedElements.forEach(
 );
 
 
+
 /* =====================================================
-   CERRAR MODAL CON ESC
+   ESC PARA CERRAR MODAL
 ===================================================== */
 
 document.addEventListener(
@@ -2446,9 +2625,10 @@ document.addEventListener(
     }
 );
 
-
 </script>
 
+
 </body>
+
 </html>
 ```
